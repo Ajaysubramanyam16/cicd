@@ -23,7 +23,8 @@ pipeline {
         stage('Run Docker Container') {
             steps {
                 script {
-                    bat "docker run -d -p 8080:80 --name my-container %DOCKER_IMAGE%:latest"
+                   bat "docker run -d -p 8888:80 --name my-container %DOCKER_IMAGE%:latest"
+
                 }
             }
         }
